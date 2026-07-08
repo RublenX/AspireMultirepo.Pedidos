@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="src/PedidosApi/PedidosApi.csproj" Id="b2fef725-61ac-4025-bd30-0e99b1f792d7" />
+  <Project Path="src/PedidosApplication/PedidosApplication.csproj" />
+  <Project Path="src/PedidosData/PedidosData.csproj" Id="a65de5ee-56da-4d04-85ab-419a89a1c285" />
+</Solution>
