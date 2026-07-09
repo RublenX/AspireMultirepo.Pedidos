@@ -1,6 +1,6 @@
 # AspireMultirepo.Pedidos
 
-Microservicio de **gestión de Pedidos**, implementado como prueba de concepto para validar la orquestación de **.NET Aspire en modo multirepo**. Forma parte de una solución compuesta por tres repositorios independientes: este microservicio, [AspireMultirepo.Clientes](https://github.com/RublenX/AspireMultirepo.Clientes) y [AspireMultirepo.Orchestrator](https://github.com/RublenX/AspireMultirepo.Orchestrator) (AppHost de Aspire). Más adelante se añadirá una aplicación **React** que consumirá esta API junto con la de Clientes.
+Microservicio de **gestión de Pedidos**, implementado como prueba de concepto para validar la orquestación de **.NET Aspire en modo multirepo**. Forma parte de una solución compuesta por cuatro repositorios independientes: este microservicio, [AspireMultirepo.Clientes](https://github.com/RublenX/AspireMultirepo.Clientes), [AspireMultirepo.Orchestrator](https://github.com/RublenX/AspireMultirepo.Orchestrator) (AppHost de Aspire) y [AspireMultirepo.Portal](https://github.com/RublenX/AspireMultirepo.Portal) (frontend React).
 
 > Este repositorio no se ejecuta de forma aislada en el flujo normal: es orquestado por `AspireMultirepo.Orchestrator`, que además de este microservicio levanta PostgreSQL, RabbitMQ y el microservicio de Clientes. Para ejecutar la solución completa, ver el README de ese repositorio.
 

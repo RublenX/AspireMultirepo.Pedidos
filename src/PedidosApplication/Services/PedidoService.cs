@@ -45,7 +45,7 @@ namespace PedidosApplication.Services
             {
                 IdCliente = pedidoInsert.IdCliente,
                 Cliente = nombreCliente,
-                Fecha = pedidoInsert.Fecha,
+                Fecha = DateTime.SpecifyKind(pedidoInsert.Fecha, DateTimeKind.Utc),
                 Total = pedidoInsert.Total
             };
             await _pedidoRepository.AddAsync(pedido);
@@ -74,7 +74,7 @@ namespace PedidosApplication.Services
                 pedido.Cliente = nombreCliente;
             }
 
-            pedido.Fecha = pedidoUpdate.Fecha;
+            pedido.Fecha = DateTime.SpecifyKind(pedidoUpdate.Fecha, DateTimeKind.Utc);
             pedido.Total = pedidoUpdate.Total;
 
             await _pedidoRepository.UpdateAsync(pedido);
